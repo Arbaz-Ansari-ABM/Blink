@@ -11,7 +11,15 @@ export default function PageFooter() {
         <div className="footer-top">
           <div>
             <Link to="/" className="brand">
-              <img src={logo} alt="" className="brand-logo" width="28" height="28" />
+              <img
+                src={logo}
+                alt=""
+                className="brand-logo"
+                width="28"
+                height="28"
+                loading="lazy"
+                decoding="async"
+              />
               blink
             </Link>
             <div className="footer-statement">

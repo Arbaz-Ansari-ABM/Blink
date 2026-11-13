@@ -37,7 +37,16 @@ export default function Home() {
       <header className="nav">
         <div className="wrap nav-inner">
           <Link to="/" className="brand" aria-label="Blink home">
-            <img src={logo} alt="" className="brand-logo" width="28" height="28" />
+            <img
+              src={logo}
+              alt=""
+              className="brand-logo"
+              width="28"
+              height="28"
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
+            />
             blink
           </Link>
           <nav className="nav-links" aria-label="Primary navigation">
@@ -260,7 +269,15 @@ export default function Home() {
           <div className="footer-top">
             <div>
               <Link to="/" className="brand">
-                <img src={logo} alt="" className="brand-logo" width="28" height="28" />
+                <img
+                  src={logo}
+                  alt=""
+                  className="brand-logo"
+                  width="28"
+                  height="28"
+                  loading="lazy"
+                  decoding="async"
+                />
                 blink
               </Link>
               <div className="footer-statement">
@@ -273,20 +290,19 @@ export default function Home() {
                 <strong>Explore</strong>
                 <a href="#product">Product</a>
                 <a href="#rhythm">How it works</a>
-                <a href="https://github.com/Arbaz-Ansari-ABM" target="_blank" rel="noreferrer">
+                <a href="https://github.com/Arbaz-Ansari-ABM/Blink" target="_blank" rel="noreferrer">
                   Github
                 </a>
               </div>
               <div className="footer-col">
                 <strong>Elsewhere</strong>
-                <a href="#download">Instagram</a>
-                <a href="#download">X</a>
+                <a href="https://www.instagram.com/blink.20.20.20/" target='_blank'>Instagram</a>
                 <a href="mailto:arbazahmadansari03@gmail.com?subject=Blink%20Support">
                   Contact Us
                 </a>
               </div>
               <div className="footer-col">
-                <strong>Fine print</strong>
+                <strong>Legal & Policies</strong>
                 <Link to="/privacy-policy">Privacy Policy</Link>
                 <Link to="/terms-of-service">Terms of Service</Link>
                 <Link to="/disclaimer">Disclaimer</Link>
